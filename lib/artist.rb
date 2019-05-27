@@ -17,7 +17,7 @@ def add_song(song)
 end
 
 def add_song_by_name(name)
-  song = Song.new(name)
+  song = Song.new(name) #takes in an arguement for a song and then associates it with the song and artist
   self.song << songs
   song.artist = self
   @@song_count += 1
