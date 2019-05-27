@@ -17,6 +17,6 @@ end
 
 
 def artist_name
-  artist.name if artist
+  artist.name if artist #=> knows the name of artist and returns nil if song doesnt have an artist
 end
 end
