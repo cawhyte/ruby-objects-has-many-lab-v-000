@@ -13,4 +13,8 @@ def self.all
   @@all
 end
 
+def author
+  author.name if author
+end
+
 end
