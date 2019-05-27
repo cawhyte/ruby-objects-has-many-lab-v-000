@@ -5,13 +5,20 @@ class Artist
 
 @@song_count = 0
 
-  def initialize(name) #allows access and stores artist name
+def initialize(name) #allows access and stores artist name
     @name = name
     @songs = []
-  end
+end
 
 def add_song(song)
   self.songs << song #creates new instances of artist & adds it to the artist array of songs
+  song.artist = self
+  @@song_count += 1
+end
+
+def add_song_by_name(name)
+  song = Song.new(name)
+  self.song << songs
   song.artist = self
   @@song_count += 1
 end
