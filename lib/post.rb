@@ -13,7 +13,7 @@ def self.all
   @@all
 end
 
-def author
+def author_name(author)
   author.name if author
 end
 
