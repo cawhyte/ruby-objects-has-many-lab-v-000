@@ -28,7 +28,7 @@ def posts
   Post.all.select{|post| post.author == self}
 end
 
-def self.post_count
+def author.post_count
   @@all
 end
 
