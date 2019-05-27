@@ -12,7 +12,6 @@ def initialize(name) #=> initializes name and creates instance of variable
 end
 
 def self.all #=>creates instance of variable
-  @name = name
 @@all
 end
 
