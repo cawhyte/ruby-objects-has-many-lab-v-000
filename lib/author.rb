@@ -6,7 +6,7 @@ attr_accessor :name
 
 @@all = [] #=> allows for storing information in empty array
 
-def initialize(name) #=> initializes name and creates instance of variable
+def initialize(name=nil) #=> initializes name and creates instance of variable
   @name = name
   @@all << self
 end
@@ -26,6 +26,10 @@ end
 
 def posts
   Post.all.select{|post| post.author == self}
+end
+
+def self.post_count
+  @@all
 end
 
 end
